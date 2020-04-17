@@ -21,7 +21,7 @@ const Input2=(props,ref)=>{
   //暴露给 父组件ref的方法
   useImperativeHandle(ref,()=>({ 
     //注册focus 函数
-    focus:()=>{
+    focus1:()=>{
       refInput.current.focus();
     }
   }),[])
@@ -55,7 +55,7 @@ export default ()=>{
       onChange={(x)=>console.log('1:',x)}
     />
     <button onClick={()=>{
-      r1.current.focus()
+      r1.current.focus1()
       }}>
     focus1
   </button>
